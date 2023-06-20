@@ -1,24 +1,15 @@
 #include "main.h"
+#include "ctype.h"
 
 /**
- * print_alphabet_x10 - prints 10 times the alphabet, in lowercase,
- * followed by a new line
+ * _islower - checks for lowercase character
+ * @c: the character to check
+ * Return: 1 if c is lowercase, 0 otherwise
  */
-void print_alphabet_x10(void)
-{
-	char c = 'a';
-	int i = 0;
-	while (i < 10)
-	{
-		while (c <= 'z')
-		{
-			_putchar(c);
-			c++;
-		}
-		c = 'a';
-		i++;
-		_putchar('\n');	
-	}
 
-	
+int _islower(int c)
+{
+	if (islower(c) == 0)
+		return 0
+	return 1
 }
