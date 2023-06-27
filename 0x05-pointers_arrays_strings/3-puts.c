@@ -9,8 +9,8 @@ void _puts(char *str)
 	int i;
 
 	for (i = 0; *str != '\0'; i++){
-		str += 1;
 		_putchar(*str);	
+		str++;
 	}
 	_putchar('\n');
 }
