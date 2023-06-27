@@ -1,5 +1,4 @@
 #include "main.h"
-#include "std.h"
 
 /**
  * function takes a pointer to an int as parameter
