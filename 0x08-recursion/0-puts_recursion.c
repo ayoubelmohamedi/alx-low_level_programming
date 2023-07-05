@@ -1,21 +1,16 @@
 #include "main.h"
 
 /**
- * *_memcpy - copies memory area
- * @dest: destination memory area
- * @src: memory area to copy from
- * @n: number of bytes to copy
- *
- * Return: pointer to dest
+ * _puts_recursion - prints a string, followed by a new line
+ * @s: string to print
  */
-char *_memcpy(char *dest, char *src, unsigned int n)
+void _puts_recursion(char *s)
 {
-	unsigned int i;
-
-	for (i = 0; i < n; i++)
+	if (*s == '\0')
 	{
-		dest[i] = src[i];
+		_putchar('\n');
+		return;
 	}
-
-	return (dest);
+	_putchar(*s);
+	_puts_recursion(s + 1);
 }
